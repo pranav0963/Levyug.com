@@ -815,14 +815,40 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .swiper {
-  width: 70%;
+  width: 100%;
+  /* Adjusted for full width on mobile */
   height: fit-content;
 }
 
 .swiper-slide img {
   width: 100%;
-
+  position: relative;
 }
+
+.img1 {
+  position: relative;
+  top: 15.5px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
 
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
