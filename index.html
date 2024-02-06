@@ -37,24 +37,6 @@
 
 <body id="body">
 
-  <!--==========================
-    Top Bar
-  ============================-->
-  <!-- <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:info@levyug.com">info@levyug.com</a>
-        <i class="fa fa-phone"></i> +91 91431 43870
-      </div>
-      <div class="social-links float-right">
-        <a href="https://www.linkedin.com/company/levyug/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/levyug.co/" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="https://twitter.com/levcommunity" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.google.com/maps/place/LEVYUG+PRIVATE+LIMITED/@17.4264192,78.4277785,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb91e3d770ec1f:0x9100e90704d7384!8m2!3d17.4264192!4d78.4303534!16s%2Fg%2F11vhgjl_1x?entry=ttu"
-          class="google-plus"><i class="fa fa-map"></i></a>
-      </div>
-    </div>
-  </section> -->
 
   <!--==========================
     Header
@@ -64,17 +46,19 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#body"><img src="img/logo.svg" style="position:center;bottom:20px;" width="85" height="40" alt=""
-            title="" /></a>
+        <a href="#body" class="hero"><img src="img/logo.svg" style="position:center;bottom:20px;" width="85" height="40"
+            alt="" title="" /></a>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+        <a href="#body" class="scroll-hero"><img src="img/logo_blue.svg" style="position:center;bottom:20px;" width="85"
+            height="40" alt="" title="" /></a>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#body">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li class="menu-has-children"><a href="#services">Services</a>
+          <li>‎ </li>
+          <li class="menu-active"><a href="#body" class="colorednav">Home</a></li>
+          <li><a href="#about" class="colorednav">About Us</a></li>
+          <li class="menu-has-children"><a href="#services" class="colorednav">Services</a>
             <ul>
               <li><a href="http://levlegal.in/">Legal Compliances</a></li>
               <li><a href="#marketing">Marketing</a></li>
@@ -84,11 +68,9 @@
               <li><a href="#">Incubation</a></li>
             </ul>
           </li>
-          <li><a href="#milestones">Milestones</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#milestones" class="colorednav">Milestones</a></li>
+          <li><a href="#portfolio" class="colorednav">Portfolio</a></li>
+          <li><a href="#contact" class="colorednav">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -121,8 +103,8 @@
       </section>
     </div>
 
-    <!--<div id="intro-carousel" class="owl-carousel">
-      <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div>
+    <!-- <div id="intro-carousel" class="owl-carousel">
+      <div class="item" style="background-image: url('img/intro-carousel/.jpg');"></div>
       <div class="item" style="background-image: url('img/intro-carousel/2.jpg');"></div>
       <div class="item" style="background-image: url('img/intro-carousel/3.jpg');"></div>
       <div class="item" style="background-image: url('img/intro-carousel/4.jpg');"></div>
@@ -326,7 +308,7 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
 
-            <div class="swiper-slide img1"><img src="img/clients/1.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/clients/1.png" alt=""></div>
             <div class="swiper-slide"><img src="img/clients/2.png" alt=""></div>
             <div class="swiper-slide"><img src="img/clients/3.png" alt=""></div>
             <div class="swiper-slide"><img src="img/clients/4.png" alt=""></div>
@@ -356,10 +338,9 @@
         loop: true,
         slidesPerView: 3,
 
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
         },
 
         // Navigation arrows
@@ -381,13 +362,11 @@
     <section id="portfolio" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Our Portfolio</h2>
-          <p>Discover a collection of delighted clients who have entrusted us with their projects and experienced
-            complete satisfaction with our services.</p>
+          <h2>Portfolio</h2>
         </div>
       </div>
 
-      <div class="container-fluid">
+      <!--<div class="container-fluid">
         <div class="row no-gutters">
 
           <div class="col-lg-3 col-md-4">
@@ -396,7 +375,7 @@
                 <img src="img/portfolio/1.jpg" alt="" style="width: 40%; max-height: 200px; filter: grayscale(100%);">
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <!--<h2 class="wow fadeInUp">Website Dev & Marketing</h2>-->
+                    <h2 class="wow fadeInUp">Website Dev & Marketing</h2>
                   </div>
                 </div>
               </a>
@@ -410,7 +389,7 @@
                 <img src="img/portfolio/2.jpg" alt="" style="width: 40%; max-height: 200px; filter: grayscale(100%);">
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <!--<h2 class="wow fadeInUp">Legal Services</h2>-->
+                    <h2 class="wow fadeInUp">Legal Services</h2>
                   </div>
                 </div>
               </a>
@@ -423,7 +402,7 @@
                 <img src="img/portfolio/3.jpg" alt="" style="width: 40%; max-height: 200px; filter: grayscale(100%);">
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <!--<h2 class="wow fadeInUp">QR Code Menu</h2>-->
+                    <h2 class="wow fadeInUp">QR Code Menu</h2>
                   </div>
                 </div>
               </a>
@@ -436,174 +415,138 @@
                 <img src="img/portfolio/4.jpg" alt="" style="width: 40%; max-height: 200px; filter: grayscale(100%);">
                 <div class="portfolio-overlay">
                   <div class="portfolio-info">
-                    <!--<h2 class="wow fadeInUp">Portfolio Item 4</h2>-->
+                    <h2 class="wow fadeInUp">Portfolio Item 4</h2>
                   </div>
                 </div>
               </a>
             </div>
           </div>
+        </div>-->
+
+      <div class="photo-container">
+        <div class="photo-item" style="text-align: left;">
+          <img src=" img/portfolio/1.jpg" style="width: 100px; height: 100px; filter: grayscale(100%);" alt="Photo 1">
+          <p class="wow fadeInUp">Website Dev <br> Marketing</p>
         </div>
-        <!--
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/5.jpg" class="portfolio-popup">
-                <img src="img/portfolio/5.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info">
-                    <h2 class="wow fadeInUp">Portfolio Item 5</h2>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/6.jpg" class="portfolio-popup">
-                <img src="img/portfolio/6.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info">
-                    <h2 class="wow fadeInUp">Portfolio Item 6</h2>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/7.jpg" class="portfolio-popup">
-                <img src="img/portfolio/7.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info">
-                    <h2 class="wow fadeInUp">Portfolio Item 7</h2>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="portfolio-item wow fadeInUp">
-              <a href="img/portfolio/8.jpg" class="portfolio-popup">
-                <img src="img/portfolio/8.jpg" alt="">
-                <div class="portfolio-overlay">
-                  <div class="portfolio-info">
-                    <h2 class="wow fadeInUp">Portfolio Item 8</h2>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
+        <div class="photo-item" style="text-align: left;">
+          <img src="img/portfolio/2.jpg" style="width: 100px; height: 100px; filter: grayscale(100%);" alt="Photo 2">
+          <p class="wow fadeInUp">Legal Compliances <br> Incorporation </p>
         </div>
-
+        <div class="photo-item" style="text-align: left;">
+          <img src="img/portfolio/3.jpg" style="width: 100px; height: 100px; filter: grayscale(100%);" alt="Photo 3">
+          <p class="wow fadeInUp">Technical Support <br> QRCode Menu</p>
+        </div>
+        <div class="photo-item" style="text-align: left;">
+          <img src="img/portfolio/4.jpeg" style="width: 100px; height: 100px; filter: grayscale(100%);" alt="Photo 4">
+          <p class="wow fadeInUp">App Development</p>
+        </div>
       </div>
-    </section> -->
-        <!-- #portfolio -->
 
-        <!--==========================
+      <!-- #portfolio -->
+
+      <!--==========================
       Testimonials Section
     ============================-->
-        <section id="testimonials" class="wow fadeInUp">
-          <div class="container">
-            <div class="section-header">
-              <h2>FAQ's</h2>
-              <p>Here are the answers to all your doubts!!</p>
+      <section id="testimonials" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>FAQ's</h2>
+            <p>Here are the answers to all your doubts!!</p>
+          </div>
+          <div class="owl-carousel testimonials-carousel">
+
+            <div class="testimonial-item">
+              <h3>How is it different from a startup incubator?</h3>
+              <p style="text-align: justify;">
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                A startup incubator provides us with workplace, mentoring and funding. But in addition to these
+                facilities Lev would create a proper team with required skills and provide marketing to that product.
+                As we can see that 29% (Ran out of cash) + 23% (Not the right team) + 14%(Poor Marketing) – All that
+                risk of a startup can be reduced if the founder chooses ‘Lev’ over any other Startup Incubator.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
+
             </div>
-            <div class="owl-carousel testimonials-carousel">
 
-              <div class="testimonial-item">
-                <h3>How is it different from a startup incubator?</h3>
-                <p style="text-align: justify;">
-                  <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  A startup incubator provides us with workplace, mentoring and funding. But in addition to these
-                  facilities Lev would create a proper team with required skills and provide marketing to that product.
-                  As we can see that 29% (Ran out of cash) + 23% (Not the right team) + 14%(Poor Marketing) – All that
-                  risk of a startup can be reduced if the founder chooses ‘Lev’ over any other Startup Incubator.
-                  <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-
-              </div>
-
-              <div class=" testimonial-item">
-                <h3>How are we unique from our competitors?</h3>
-                <p style="text-align: justify;"">
+            <div class=" testimonial-item">
+              <h3>How are we unique from our competitors?</h3>
+              <p style="text-align: justify;"">
                     <img src=" img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Our unique approach involves personalized matchmaking by our backend team, setting us apart from
-                  freelancing platforms. Unlike others, at Lev, we are rethinking the traditional model where hiring
-                  entities pay.
-                  <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
+                Our unique approach involves personalized matchmaking by our backend team, setting us apart from
+                freelancing platforms. Unlike others, at Lev, we are rethinking the traditional model where hiring
+                entities pay.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
 
-              </div>
+            </div>
 
-              <div class=" testimonial-item">
-                <h3>Saul Goodman</h3>
-                <p>
-                  <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                  Accusantium
-                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
+            <div class=" testimonial-item">
+              <h3>What's the problem statement Levyug is tackling?</h3>
+              <p>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                As we all know journey of building a start-up is a hectic task for many individuals, all because
+                they lack like-minded team mates, shallow amount of resources, unable to sustain in the market and
+                scarcity of funds to bring the idea to reality. As a result, only few people are focusing on creating
+                jobs.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
 
-              </div>
+            </div>
 
-              <div class="testimonial-item">
-                <h3>Saul Goodman</h3>
-                <p>
-                  <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                  Accusantium
-                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
+            <div class="testimonial-item">
+              <h3>Saul Goodman</h3>
+              <p>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                Accusantium
+                quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
 
-              </div>
+            </div>
 
-              <div class="testimonial-item">
-                <h3>Saul Goodman</h3>
-                <p>
-                  <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                  Accusantium
-                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-
-              </div>
+            <div class="testimonial-item">
+              <h3>Saul Goodman</h3>
+              <p>
+                <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                Accusantium
+                quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+              </p>
 
             </div>
 
           </div>
-        </section><!-- #testimonials -->
 
-        <!--==========================
+        </div>
+      </section><!-- #testimonials -->
+
+      <!--==========================
       Call To Action Section
     ============================-->
-        <section id="call-to-action" class="wow fadeInUp">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-9 text-center text-lg-left">
-                <h3 class="cta-title">Connect with us </h3>
-                <p class="cta-text"> If you would like to contact with us, do whatsapp us by clicking the button below
-                </p>
-              </div>
-              <div class="col-lg-3 cta-btn-container text-center">
-                <a class="cta-btn align-middle"
-                  href="https://api.whatsapp.com/send?phone=919143143870&text=Hi%20Levlegal,%20I%20would%20like%20to%20know%20more%20about%20Levyug">
-                  Chat with us</a>
-              </div>
+      <section id="call-to-action" class="wow fadeInUp">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-left">
+              <h3 class="cta-title">Connect with us </h3>
+              <p class="cta-text"> If you would like to contact with us, do whatsapp us by clicking the button below
+              </p>
             </div>
-
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle"
+                href="https://api.whatsapp.com/send?phone=919143143870&text=Hi%20Levlegal,%20I%20would%20like%20to%20know%20more%20about%20Levyug">
+                <img src="img/WhatsApp.svg" width="20" height="20"> Chat with us</a>
+            </div>
           </div>
-        </section><!-- #call-to-action -->
 
-        <!--==========================
+        </div>
+      </section><!-- #call-to-action -->
+
+      <!--==========================
       Our Team Section
     ============================-->
-        <!--<section id="team" class="wow fadeInUp">
+      <!--<section id="team" class="wow fadeInUp">
             <div class="container">
               <div class="section-header">
                 <h2>Our Team</h2>
@@ -676,84 +619,103 @@
 
             </div>
           </section>-->
-        <!-- #team -->
+      <!-- #team -->
 
-        <!--==========================
+      <!--==========================
       Contact Section
     ============================-->
-        <section id="contact" class="wow fadeInUp">
-          <div class="container">
-            <div class="section-header">
-              <h2>Contact Us</h2>
-            </div>
-
-            <div class="row contact-info">
-
-              <div class="col-md-4">
-                <div class="contact-address">
-                  <i class="ion-ios-location-outline"></i>
-                  <h3>Address</h3>
-                  <address>8-2-269/3/82, Rd Number 3, Sagar Society, Sri Nagar Colony, Kamalapuri Colony, Banjara
-                    Hills,Hyderabad, Telangana 500034</address>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="contact-phone">
-                  <i class="ion-ios-telephone-outline"></i>
-                  <h3>Phone Number</h3>
-                  <p><a href="tel:+919143143870">+91 91431 43870</a></p>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="contact-email">
-                  <i class="ion-ios-email-outline"></i>
-                  <h3>Email</h3>
-                  <p><a href="mailto:info@levyug.com">info@levyug.com</a></p>
-                </div>
-              </div>
-
-            </div>
+      <section id="contact" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact Us</h2>
           </div>
 
+          <div class="row contact-info">
 
-          <div class="container">
-            <div class="form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                      data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required"
-                    data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
+            <div class="col-md-4">
+              <div class="contact-address">
+                <i class="ion-ios-location-outline"></i>
+                <h3>Address</h3>
+                <address>8-2-269/3/82, Rd Number 3, Sagar Society, Sri Nagar Colony, Kamalapuri Colony, Banjara
+                  Hills,Hyderabad, Telangana 500034</address>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="contact-phone">
+                <i class="ion-ios-telephone-outline"></i>
+                <h3>Phone Number</h3>
+                <p><a href="tel:+919143143870">+91 91431 43870</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="contact-email">
+                <i class="ion-ios-email-outline"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:info@levyug.com">info@levyug.com</a></p>
+              </div>
             </div>
 
           </div>
-        </section>
-        <!-- #contact -->
+        </div>
+
+
+        <div class="container">
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                  data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+      <!-- #contact -->
 
   </main>
+
+  <!--==========================
+    Top Bar
+  ============================-->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="mailto:info@levyug.com">info@levyug.com</a>
+        <i class="fa fa-phone"></i> +91 91431 43870
+      </div>
+      <div class="social-links float-right">
+        <a href="https://www.linkedin.com/company/levyug/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/levyug.co/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/levcommunity" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.google.com/maps/place/LEVYUG+PRIVATE+LIMITED/@17.4264192,78.4277785,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb91e3d770ec1f:0x9100e90704d7384!8m2!3d17.4264192!4d78.4303534!16s%2Fg%2F11vhgjl_1x?entry=ttu"
+          class="google-plus"><i class="fa fa-map"></i></a>
+      </div>
+    </div>
+  </section>
 
   <!--==========================
     Footer
