@@ -40,6 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     let links = document.querySelectorAll(".colorednav");
+    links.forEach(function (link) {
+        link.style.color = "#666666";
+    });
 
     window.addEventListener("scroll", function () {
         let y = window.scrollY || window.pageYOffset;
