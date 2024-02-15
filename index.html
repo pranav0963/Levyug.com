@@ -34,6 +34,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+
   <!--JS-->
   <script src="js/scroll-hide-topbar.js"></script>
 </head>
@@ -279,7 +280,7 @@
     <!--==========================
       Clients Section
     ============================-->
-    <!-- <section id="clients" class="wow fadeInUp">
+    <section id="clients" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
           <h2>Milestones</h2>
@@ -287,19 +288,43 @@
         </div>
 
         <div class="owl-carousel clients-carousel">
-          <img src="img/clients/client-1.png" height="500" width="500" alt="image">
-          <img src="img/clients/client-2.png" alt="">
-          <img src="img/clients/client-3.png" alt="">
-          <img src="img/clients/client-4.png" alt="">
-          <img src="img/clients/client-5.png" alt="">
-          <img src="img/clients/client-6.png" alt="">
-          <img src="img/clients/client-7.png" alt="">
-          <img src="img/clients/client-8.png" alt="">
+          <img src="img/clients/1.png" alt="">
+          <img src="img/clients/2.png" alt="">
+          <img src="img/clients/3.png" alt="">
+          <img src="img/clients/4.png" alt="">
+          <img src="img/clients/5.png" alt="">
+          <img src="img/clients/6.png" alt="">
         </div>
 
       </div>
-    </section> <!-- #clients -->
-    <div class="container" id="milestones">
+    </section>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".clients-carousel").owlCarousel({
+          items: 3,
+          loop: true,
+          nav: false,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          responsive: {
+            0: {
+              items: 1
+            },
+            768: {
+              items: 2
+            },
+            992: {
+              items: 3
+            }
+          },
+        });
+      });
+    </script><!-- #clients -->
+    <!-- <div class="container" id="milestones">
       <div class="section-header">
         <h2>Milestones</h2>
         <p>Explore the journey of Levyug by uncovering all our past milestones.</p>
@@ -342,7 +367,7 @@
           prevEl: '.swiper-button-prev',
         },
       });
-    </script>
+    </script> -->
 
     <!--==========================
       Our Portfolio Section
