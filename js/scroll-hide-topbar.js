@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     let links = document.querySelectorAll(".colorednav");
     links.forEach(function (link) {
-        link.style.color = "#666666";
+        link.style.color = "#808080";
     });
 
     window.addEventListener("scroll", function () {
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         } else {
             links.forEach(function (link) {
-                link.style.color = "#666666";
+                link.style.color = "#808080";
             });
         }
     });
